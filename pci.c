@@ -3141,7 +3141,7 @@ static int rtw89_pci_setup_mapping(struct rtw89_dev *rtwdev,
 		goto err;
 	}
 
-	if (!rtw89_pci_is_dac_compatible_bridge(rtwdev))
+	//if (!rtw89_pci_is_dac_compatible_bridge(rtwdev))
 		goto try_dac_done;
 
 	ret = dma_set_mask_and_coherent(&pdev->dev, DMA_BIT_MASK(36));
