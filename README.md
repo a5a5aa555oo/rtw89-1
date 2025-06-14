@@ -19,13 +19,13 @@ git, make, gcc, kernel-headers, dkms and mokutil (dkms and mokutil are optional.
 1. Create a clone of this repo in your local machine
 
    ```
-   git clone https://github.com/morrownr/rtw89
+   git clone https://github.com/a5a5aa555oo/rtw89-1
    ```
 
-2. Change the working directory to rtw89
+2. Change the working directory to rtw89-1
 
    ```
-   cd rtw89
+   cd rtw89-1
    ```
 
 3. Search and remove other out-of-kernel rtw89 drivers. If your system has [Larry's rtw89 driver](https://github.com/lwfinger/rtw89) installed, you must run this command to remove it, or this driver won't work as expected.
@@ -81,10 +81,10 @@ sudo dkms status
 
 2. Remove the rtw89 driver and its source code (Change the driver version accordingly)
 ```
-sudo dkms remove rtw89/6.15 --all
+sudo dkms remove rtw89/6.16 --all
 ```
 ```
-sudo rm -rf /usr/src/rtw89-6.15
+sudo rm -rf /usr/src/rtw89-6.16
 ```
 
 3. Remove the configuration file
@@ -114,10 +114,10 @@ sudo rm -f /etc/modprobe.d/rtw89.conf
       ```   
    2. Remove the rtw89 driver. (Change the driver version accordingly)
       ```
-      sudo dkms remove rtw89/6.15 --all
+      sudo dkms remove rtw89/6.16 --all
       ```
       ```
-      sudo rm -rf /usr/src/rtw89-6.15/
+      sudo rm -rf /usr/src/rtw89-6.16/
       ```
 
    3. Run this command in the rtw89 source directory to pull the latest code
