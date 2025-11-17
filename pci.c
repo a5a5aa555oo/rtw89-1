@@ -3296,8 +3296,6 @@ static bool rtw89_pci_is_dac_compatible_bridge(struct rtw89_dev *rtwdev)
 		return false;
 
 	switch (bridge->vendor) {
-	case PCI_VENDOR_ID_INTEL:
-		return true;
 	case PCI_VENDOR_ID_ASMEDIA:
 		if (bridge->device == 0x2806)
 			return true;

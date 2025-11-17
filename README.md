@@ -26,13 +26,13 @@ git, make, gcc, kernel-headers, dkms and mokutil (dkms and mokutil are optional.
 1. Create a clone of this repo in your local machine
 
    ```
-   git clone https://github.com/morrownr/rtw89
+   git clone https://github.com/a5a5aa555oo/rtw89-1
    ```
 
-2. Change the working directory to rtw89
+2. Change the working directory to rtw89-1
 
    ```
-   cd rtw89
+   cd rtw89-1
    ```
 
 3. Search and remove previously installed out-of-kernel rtw89 drivers. If your system has [Larry's rtw89 driver](https://github.com/lwfinger/rtw89) installed, you must run this command to remove it, or this driver won't work as expected.
