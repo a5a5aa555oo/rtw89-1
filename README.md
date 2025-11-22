@@ -49,7 +49,7 @@ git, make, gcc, kernel-headers, dkms and mokutil (dkms and mokutil are optional.
      sudo dkms install $PWD
      ```
 
-   * _via make_ (**The testers of the new drivers for the USB devices MUST install the driver in this way please.**)
+   * _via make_ 
 
      ```
      make clean modules && sudo make install
@@ -82,9 +82,9 @@ git, make, gcc, kernel-headers, dkms and mokutil (dkms and mokutil are optional.
 
 ## Uninstallation Guide
 
-For users who installed the driver via `DKMS`, run:
+For users who installed the driver via `DKMS`,
 
-1. Check the version of the rtw89 driver installed on your system.
+1. Check the version of the rtw89 driver installed in your system.
 ```
 sudo dkms status rtw89
 ```
@@ -118,7 +118,7 @@ sudo rm -f /etc/modprobe.d/rtw89.conf
 
 ### Q2. How to update the driver installed via DKMS?
 
-   1. Check the version of the rtw89 driver installed on your system.
+   1. Check the version of the rtw89 driver installed in your system.
       ```
       sudo dkms status rtw89
       ```   
@@ -163,6 +163,10 @@ sudo rm -f /etc/modprobe.d/rtw89.conf
       ```
       sudo make install_fw
       ```
+
+### Q5. I see my USB Wi-Fi adapter is in Driver CDROM Mode when running `lsusb`, what should I do?
+
+Install `usb-modeswitch` (or usb_modeswitch), a tool that can switch your adapter to Wi-Fi mode.
 
 ## The Main Menu for this site contains a lot of information regarding USB WiFi Adapters
 
