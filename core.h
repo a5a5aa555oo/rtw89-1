@@ -31,6 +31,13 @@ struct rtw89_wow_cam_info;
 
 extern const struct ieee80211_ops rtw89_ops;
 
+#if LINUX_VERSION_CODE < KERNEL_VERSION(6, 9, 0)
+static inline u16 ieee80211_get_sn(struct ieee80211_hdr *hdr)
+{
+	return le16_get_bits(hdr->seq_ctrl, IEEE80211_SCTL_SEQ);
+}
+#endif
+
 #if LINUX_VERSION_CODE < KERNEL_VERSION(6, 6, 16)
 /**
  * umin - return minimum of two non-negative values
